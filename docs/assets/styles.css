@@ -21,6 +21,13 @@ body, html {
     margin-bottom: 20px;
 }
 
+/* Larger screens */
+@media (min-width: 1024px) {
+    .logo {
+        max-width: 600px; /* Limits logo size on larger screens */
+    }
+}
+
 h1 {
     font-size: 3em;
     color: #333;
@@ -31,7 +38,7 @@ p {
     color: #666;
 }
 
-/* Mobile-specific styles */
+/* Medium-sized screens */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5em;
@@ -41,11 +48,16 @@ p {
         font-size: 1.2em;
     }
 
+    .logo {
+        max-width: 400px; /* Reduces logo size on medium screens */
+    }
+
     .coming-soon-container {
         padding: 15px;
     }
 }
 
+/* Small screens */
 @media (max-width: 480px) {
     h1 {
         font-size: 2em;
@@ -53,6 +65,10 @@ p {
 
     p {
         font-size: 1em;
+    }
+
+    .logo {
+        max-width: 300px; /* Further reduces logo size for small screens */
     }
 
     .coming-soon-container {
