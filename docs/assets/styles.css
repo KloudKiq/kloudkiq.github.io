@@ -12,10 +12,12 @@ body, html {
 
 .coming-soon-container {
     text-align: center;
+    padding: 20px;
 }
 
 .logo {
-    max-width: 800px;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -27,4 +29,33 @@ h1 {
 p {
     font-size: 1.5em;
     color: #666;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .coming-soon-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .coming-soon-container {
+        padding: 10px;
+    }
 }
